@@ -1,6 +1,0 @@
-The apartment is now empty.
-Agent 1 arrives at time 1.
-Agent opens the apartment at time 2.
-
-
-Error: Agent 1 trying to open the apartment without Tenant
