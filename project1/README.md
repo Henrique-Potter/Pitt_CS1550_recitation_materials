@@ -291,3 +291,6 @@ poweroff
    ./start.sh
    ```
    This should run the QEMU virtual machine on linux.cs.pitt.edu.
+
+
+### Credits to Maher Hassan Khan
