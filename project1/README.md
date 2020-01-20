@@ -61,8 +61,8 @@ Note that you will be running QEMU on your own machine in order to test your ker
 ### Windows
 
 - download QEMU from this [link](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/blob/master/project1/qemu-win-full.zip)
-- unzip qemu_windows.zip using your favorite unzipper
-- open qemu_windows folder
+- unzip qemu-win-full.zip using your favorite unzipper
+- open qemu-win-full folder
 - read the README-en for more info
 - a file "qemu-win.bat" starts QEMU; double click boots Linux on your desktop
 - choose linux(original) using keyboard arrow keys and click enter to boot that particular kernel
@@ -78,10 +78,10 @@ Note that you will be running QEMU on your own machine in order to test your ker
 brew install qemu
 ```
 - download qemu starter script and disk image from this [link](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/blob/master/project1/qemu-mac&ubuntu-img(only).zip)
-- unzip qemu_mac_ubuntu.zip
-- open the qemu_mac_ubuntu directory using Terminal
+- unzip qemu-mac&ubuntu-img(only).zip
+- open the qemu-mac&ubuntu-img(only) directory using Terminal
 ```
-cd qemu_mac_ubuntu
+cd qemu-mac&ubuntu-img(only)
 ```
 - Run the following command to boot Linux using QEMU:
 ```
@@ -99,10 +99,10 @@ cd qemu_mac_ubuntu
 apt-get install qemu
 ```
 - download qemu starter script and disk image from this [link](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/blob/master/project1/qemu-mac&ubuntu-img(only).zip)
-- unzip qemu_mac_ubuntu.zip
-- open the qemu_mac_ubuntu directory using Terminal
+- unzip qemu-mac&ubuntu-img(only).zip
+- open the qemu-mac&ubuntu-img(only) directory using Terminal
 ```
-cd qemu_mac_ubuntu
+cd qemu-mac&ubuntu-img(only)
 ```
 - Run the following command to boot Linux using QEMU:
 ```
@@ -269,11 +269,11 @@ poweroff
    2. Download QEMU starter script and disk image from this [link](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/blob/master/project1/qemu-mac&ubuntu-img(only).zip) using the command:
 
    ```
-   wget https://github.com/maher460/Pitt_CS1550_recitation_materials/raw/master/project1/qemu_mac_ubuntu.zip
+   wget https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/raw/master/project1/qemu-mac&ubuntu-img(only).zip
    ```
    3.
    ```
-   unzip qemu_mac_ubuntu.zip
+   unzip qemu-mac&ubuntu-img(only).zip
    ```
    4. Edit the start.sh file using nano for example and change it to:
 
