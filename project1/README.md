@@ -1,17 +1,17 @@
-# Pitt CS1550 Project 1 (Spring 2019)
+# Pitt CS1550 Project 1 (Spring 2020)
 
-Kindly, find the project description [here](https://github.com/maher460/Pitt_CS1550_recitation_materials/blob/master/project1/project1.pdf). However, please go through the following instructions on how to setup and boot your linux kernel using QEMU.
+Kindly, find the project description [here](http://people.cs.pitt.edu/~henriquepotter/resources/cs_1550_2020/projects/CS1550_Project_1.pdf). However, please go through the following instructions on how to setup and boot your linux kernel using QEMU.
 
 ## Table of Contents:
 
-- [Step 0: Setup the Kernel Source](https://github.com/maher460/Pitt_CS1550_recitation_materials/tree/master/project1#step-0-setup-the-kernel-source)
-- [Step 1: Download QEMU for your machine](https://github.com/maher460/Pitt_CS1550_recitation_materials/tree/master/project1#step-1-download-qemu-for-your-machine)
-- [Step 2: Copy your own kernel files to QEMU](https://github.com/maher460/Pitt_CS1550_recitation_materials/tree/master/project1#step-2-copy-your-own-kernel-files-to-qemu)
-- [Step 3: Install your own kernel in QEMU](https://github.com/maher460/Pitt_CS1550_recitation_materials/tree/master/project1#step-3-install-your-own-kernel-in-qemu)
-- [Step 4: Update the bootloader and then boot into your own kernel](https://github.com/maher460/Pitt_CS1550_recitation_materials/tree/master/project1#step-4-update-the-bootloader-and-then-boot-into-your-own-kernel)
-- [Step 5: Rebuilding your modified kernel and running it](https://github.com/maher460/Pitt_CS1550_recitation_materials/tree/master/project1#step-5-rebuilding-your-modified-kernel-and-running-it)
-- [Step 6 (optional): Using GitHub private repo to maintain your work](https://github.com/maher460/Pitt_CS1550_recitation_materials/tree/master/project1#step-6-optional-using-github-private-repo-to-maintain-your-work)
-- [Tips and Tricks](https://github.com/maher460/Pitt_CS1550_recitation_materials/tree/master/project1#tips-and-tricks)
+- [Step 0: Setup the Kernel Source](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/tree/master/project1#step-0-setup-the-kernel-source)
+- [Step 1: Download QEMU for your machine](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/tree/master/project1#step-1-download-qemu-for-your-machine)
+- [Step 2: Copy your own kernel files to QEMU](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/tree/master/project1#step-2-copy-your-own-kernel-files-to-qemu)
+- [Step 3: Install your own kernel in QEMU](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/tree/master/project1#step-3-install-your-own-kernel-in-qemu)
+- [Step 4: Update the bootloader and then boot into your own kernel](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/tree/master/project1#step-4-update-the-bootloader-and-then-boot-into-your-own-kernel)
+- [Step 5: Rebuilding your modified kernel and running it](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/tree/master/project1#step-5-rebuilding-your-modified-kernel-and-running-it)
+- [Step 6 (optional): Using GitHub private repo to maintain your work](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/tree/master/project1#step-6-optional-using-github-private-repo-to-maintain-your-work)
+- [Tips and Tricks](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/tree/master/project1#tips-and-tricks)
 
 <br>
 
@@ -60,7 +60,7 @@ Note that you will be running QEMU on your own machine in order to test your ker
 
 ### Windows
 
-- download QEMU from this [link](https://github.com/maher460/Pitt_CS1550_recitation_materials/blob/master/project1/qemu_windows.zip)
+- download QEMU from this [link](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/blob/master/project1/qemu-win-full.zip)
 - unzip qemu_windows.zip using your favorite unzipper
 - open qemu_windows folder
 - read the README-en for more info
@@ -77,7 +77,7 @@ Note that you will be running QEMU on your own machine in order to test your ker
 ```
 brew install qemu
 ```
-- download qemu starter script and disk image from this [link](https://github.com/maher460/Pitt_CS1550_recitation_materials/blob/master/project1/qemu_mac_ubuntu.zip)
+- download qemu starter script and disk image from this [link](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/blob/master/project1/qemu-mac&ubuntu-img(only).zip)
 - unzip qemu_mac_ubuntu.zip
 - open the qemu_mac_ubuntu directory using Terminal
 ```
@@ -98,7 +98,7 @@ cd qemu_mac_ubuntu
 ```
 apt-get install qemu
 ```
-- download qemu starter script and disk image from this [link](https://github.com/maher460/Pitt_CS1550_recitation_materials/blob/master/project1/qemu_mac_ubuntu.zip)
+- download qemu starter script and disk image from this [link](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/blob/master/project1/qemu-mac&ubuntu-img(only).zip)
 - unzip qemu_mac_ubuntu.zip
 - open the qemu_mac_ubuntu directory using Terminal
 ```
@@ -266,7 +266,7 @@ poweroff
 
 - To run the QEMU image on linux.cs.pitt.edu instead of your local machine, follow the following steps:
    1. ssh into linux.cs.pitt.edu and cd into the folder where you plan to work on project 1.
-   2. Download QEMU starter script and disk image from this [link](https://github.com/maher460/Pitt_CS1550_recitation_materials/blob/master/project1/qemu_mac_ubuntu.zip) using the command:
+   2. Download QEMU starter script and disk image from this [link](https://github.com/Henrique-Potter/Pitt_CS1550_recitation_materials/blob/master/project1/qemu-mac&ubuntu-img(only).zip) using the command:
 
    ```
    wget https://github.com/maher460/Pitt_CS1550_recitation_materials/raw/master/project1/qemu_mac_ubuntu.zip
